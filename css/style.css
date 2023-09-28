@@ -1,0 +1,133 @@
+body {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.zone {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 0px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    -o-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+
+/**************************
+    *****  Nav   *****   
+***************************/
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.contact {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #f0f0f6;
+    text-decoration: none;
+}
+
+.menu {
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+
+/************************
+  *****  Main *****    
+*************************/
+
+.container {
+    margin-top: 60px;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*************************
+   *****  Grid  *****   
+***************************/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+}
+
+.box {
+    background-color: #cbcbcb;
+    padding: 40px;
+    margin: 10px;
+}
+
+.box:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.box>img {
+    width: 100%;
+    height: auto;
+}
+
+
+/********************************
+   *****    Footer    *****  
+*********************************/
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+
+/***********************************
+   *****  Blue col BckG   ***** 
+************************************/
+
+.blue {
+    background: #8fdefa;
+    background: -moz-linear-gradient(top, #8fdefa 0%, #0060cc 100%);
+    background: -webkit-linear-gradient(top, #8fdefa 0%, #0060cc 100%);
+    background: -o-linear-gradient(top, #8fdefa 0%, #0060cc 100%);
+    background: -ms-linear-gradient(top, #8fdefa 0%, #0060cc 100%);
+    background: linear-gradient(top, #8fdefa 0%, #0060cc 100%);
+}
+
+
+/**************************************
+      *****  @media     ***** 
+***************************************/
+
+@media only screen and (max-width: 600px) {
+    .nav,
+    footer {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
